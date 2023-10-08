@@ -1,0 +1,27 @@
+#!/usr/bin/sh
+
+FILENAME="pkg.list"
+
+save() {
+	yay -Qe | awk '{ print $1 }' > pkg.list
+}
+
+load() {
+	if ! [ -f "$FILENAME" ]; then
+		echo "$FILENAME does not exist, use '$0 save' first"
+		return
+	fi
+
+	pkgs="$(cat $FILENAME | xargs)"
+	yay -Sy $pkgs
+}
+
+help() {
+	echo "'$0 save' to put explicitly installed packages into '$FILENAME'."
+	echo "'$0 load' to install packages from '$FILENAME'"
+}
+
+case "$1" in
+	save | load | help) $1;;
+	*) echo "Wrong command '$1'"; help;;
+esac
