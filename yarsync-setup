@@ -1,0 +1,11 @@
+#!/usr/bin/sh
+
+if [ -d ~/.ys ]; then
+	echo "yarsync is already set up."
+	exit 1
+fi
+
+cd "$HOME" || exit
+yarsync init
+
+echo "Type 'yarsync remote add <name> <path>'."
