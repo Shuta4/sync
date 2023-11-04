@@ -13,7 +13,7 @@ load() {
 	fi
 
 	pkgs="$(cat $FILENAME | xargs)"
-	yay -Sy $pkgs
+	yay -Sy --needed $pkgs
 }
 
 help() {
