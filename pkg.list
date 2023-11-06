@@ -28,7 +28,6 @@ chromium
 cups
 dcfldd
 discord
-discord-screenaudio
 docker
 docker-compose
 dunst
@@ -45,7 +44,6 @@ findutils
 firefox
 flake8
 flameshot
-flatpak
 flex
 freerdp
 fzf
@@ -73,7 +71,6 @@ ifplugd
 inkscape
 inotify-tools
 isync
-jetbrains-toolbox
 jq
 lf
 libbsd
@@ -82,6 +79,7 @@ libpulse
 libreoffice-fresh
 libtool
 libva-mesa-driver
+libvncserver
 libxft
 linux-firmware
 linux-zen
@@ -130,8 +128,6 @@ pipewire-pulse
 pkgconf
 podofo
 podofo-tools
-proton-ge-custom-bin
-protontricks
 python-beautifulsoup4
 python-httplib2
 python-lsp-server
@@ -169,6 +165,7 @@ tcpflow
 telegram-desktop
 texinfo
 texlive-basic
+texlive-fontsrecommended
 texlive-langcyrillic
 texlive-latexextra
 texlive-tlpdb
@@ -204,6 +201,7 @@ xorg-xinit
 xournalpp
 yaml-language-server
 yapf
+yarsync
 yay
 yt-dlp
 zathura
